@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 .p-w-parent {
   border: 2px solid transparent;
@@ -22,7 +23,7 @@ body {
   border: 2px dotted transparent;
   width: 64%;
   height: 100%;
-  /* background-color: blue; */
+  background-color:white;
 }
 #purple-img {
   width: 100%;
@@ -116,28 +117,31 @@ label {
   height: auto;
 }
 #Date-Cvc-pr > div:nth-child(1) input {
-  border: 1px solid black;
+  border: 1px solid #AFAFAF;
   width: 30%;
   margin-left: 5px;
+  border-radius: 5px;
 }
 
 #Date-Cvc-pr > div:nth-child(2) input {
-  border: 1px solid black;
+  border: 1px solid #AFAFAF;
   display: block;
   width: 65%;
+  border-radius: 5px;
 }
 input {
-  padding: 5px;
+  padding: 8px;
 }
 
 #Name-input,
 #Number-input {
-  border: 1px solid black;
+  border: 1px solid #AFAFAF;
   width: 60%;
   margin-left: 5px;
+  border-radius: 5px;
 }
 #Date-Cvc-pr input {
-  border: 1px solid black;
+  border: 1px solid #AFAFAF;
   margin-top: 4%;
   margin-bottom: 2%;
 }
@@ -145,14 +149,14 @@ input {
 #confirm-button {
   background-color: black;
   width: 64%;
-  padding: 7px;
+  padding:10px;
   color: white;
   border-radius: 5px;
 }
 .input-indicator {
   font-family: 'Anek Gujarati', sans-serif;
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
 }
 
@@ -185,7 +189,7 @@ input {
 
 @media (max-width: 890px) {
   #confirm-button {
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
   #Date-Cvc-pr > div:nth-child(2) {
     margin-top: 3vh;
@@ -221,7 +225,7 @@ input {
 @media (max-width: 604px) {
   .p-w-parent > div:nth-child(1) {
     width: 100%;
-    height: 49vh;
+    height:57vh;
   }
   .p-w-parent > div:nth-child(2) {
     position: static;
@@ -239,20 +243,20 @@ input {
     margin-left: 0px;
   }
   .Entry-container {
-    height: 45vh;
+    height: 42vh;
     bottom: 0px;
     width: 82vw;
     padding: 5px;
   }
   .container {
     position: absolute;
-    top: -330px;
+    top: -343px;
     left: 2vw;
   }
   .c2 {
     position: relative;
     left: 2vw;
-    top: -170px;
+    top: -186px;
   }
   #purple-img {
     height: 104%;
@@ -264,9 +268,25 @@ input {
     display: none;
   }
   body {
-    background-color: rgb(82, 179, 100);
+    background-color: white;
   }
   #confirm-button {
     margin-top: 40%;
+  }
+  .container {
+    position: absolute;
+    top: -350px;
+    left: -1vw;
+  }
+  .c2 {
+    position: relative;
+    left: -1vw;
+    top: -170px;
+  }
+  .Entry-container{
+    border: 2px transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
   }
 }
