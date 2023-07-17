@@ -33,7 +33,7 @@ e.preventDefault();
 if(cardName.length===0 || cardNumber.length===0 || cardCvc.length===0){
 setError(true)
 }
-    if(cardName&&cardNumber&&cardCvc&&cardExpm&&cardExpY){
+    if(cardName&&cardNumber&&(cardNumber.length===16)&&cardCvc&&cardExpm&&cardExpY){
         console.log(cardName,cardNumber,cardCvc);
         if (myNameRef.current) {
              myNameRef.current.innerHTML = cardName;
@@ -87,7 +87,9 @@ setError(true)
 
 
           
-    }
+    }else{
+      alert("Check all details");
+  }
 }
 
 
